@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic DOM Example</title>
+</head>
+<body>
+
+    <h1>JavaScript DOM Example</h1>
+
+    <button onclick="showMessage()">
+        Click Here
+    </button>
+
+    <div id="content"></div>
+
+    <script>
+
+        function showMessage() {
+
+            // Access div using DOM
+            let element = document.getElementById("content");
+
+            // Create dynamic content
+            element.innerHTML = `
+                <h2>Welcome!</h2>
+                <p>This content is displayed dynamically using JavaScript DOM.</p>
+            `;
+        }
+
+    </script>
+
+</body>
+</html>
